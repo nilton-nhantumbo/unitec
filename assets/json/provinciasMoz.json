@@ -1,0 +1,136 @@
+{
+    "places": [
+        {
+            "id": 3,
+            "name": "Maputo Cidade",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Maputo Província",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Gaza",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Inhambane",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Manica",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Sofala",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 9,
+            "name": "Zambézia",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 10,
+            "name": "Tete",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 11,
+            "name": "Nampula",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 12,
+            "name": "Niassa",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        },
+        {
+            "id": 13,
+            "name": "Cabo delgado",
+            "level": 3,
+            "description": "Província",
+            "in_place": {
+                "id": 2,
+                "name": "Moçambique",
+                "level": 2,
+                "description": "País"
+            }
+        }
+    ]
+}
