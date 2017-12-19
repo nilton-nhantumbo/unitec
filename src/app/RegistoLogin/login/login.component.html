@@ -1,0 +1,69 @@
+<div class="login-wraper">
+<div class="login-container">
+
+
+
+   <div class="login-top-logo ">
+    <a href="http://www.uniconnectworks.com/" class="simple-text">
+    <div class="logo-img">
+      <img src="../../../../assets/unIcons/Unitec_academy_logo_white.png"/>
+    </div>
+  </a>
+  </div>
+
+
+
+  <fieldset [disabled]="isLoadng">
+    <div class="form-container">
+
+    <h1>Bem vindo</h1>
+    <p>Por Favor insira seu Email e Senha</p>
+      <div class="error" class="error" *ngIf="error" [@fallIn]='state'>
+        {{ error }}
+        <span class="closebtn" (click)="hideError()">&times;</span>
+      </div>
+     <form novalidate [formGroup]="form" (ngSubmit)="onSubmit(form)" >
+
+       <div class="form-group">
+      <input class="txt" (ngModelChange)="hideError()" formControlName="email" type="email" placeholder="Email"  name="email" required>
+         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alerta" >
+           <div [hidden]="!email.errors.required" >
+             O Email é obrigatório!
+           </div>
+           <div [hidden]="!email.errors.minlength" >
+             O Email deve conter no   mínimo  8 caracteres.
+           </div>
+           <div [hidden]="!email.errors.maxlength" >
+           O Email deve conter  máximoo  80 caracteres.
+           </div>
+           <div [hidden]="!email.errors.pattern" >
+             Formato de email Invalido.
+           </div>
+         </div>
+       </div>
+
+       <input formControlName="senha"  (ngModelChange)="hideError()" type="password"  placeholder="Senha" name="senha" class="txt" required>
+       <div *ngIf="senha.invalid && (senha.dirty || senha.touched)" class="alerta">
+         <div [hidden]="!senha.errors.required">
+           A Senha é obrigatório!
+         </div>
+         <div [hidden]="!senha.errors.minlength">
+          A Senha deve conter no   mínimo  6 caracteres.
+         </div>
+         <div [hidden]="!senha.errors.maxlength">
+          A Senha deve conter  máximoo  16 caracteres.
+         </div>
+       </div>
+       <button type="submit" class="basic-btn"  [disabled]="!form.valid">Entrar</button>
+
+
+       <a routerLink="/registo" class="alc">Não tens uma conta? <span>Regista - se</span></a>
+      </form>
+    </div>
+  </fieldset>
+  <div class="pbarLoginContainer" *ngIf="isLoadng">
+    <mat-progress-spinner class="pbar" mode="indeterminate" value="100" color="primary"></mat-progress-spinner>
+  </div>
+</div>
+
+</div>
